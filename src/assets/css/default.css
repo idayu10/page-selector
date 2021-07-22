@@ -1,0 +1,112 @@
+.container > .contents {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+/* .container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+} */
+
+@media (min-width: 600px) {
+  /* PC版：コンテナ */
+  .container .contents {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container .clear {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1025px) {
+  /* PC版(大)：コンテナ */
+  .container .contents {
+    max-width: 1100px;
+  }
+}
+
+.clear dt {
+  font-size: large;
+  font-weight: bold;
+}
+.clear button {
+  font-size: small;
+}
+
+.title {
+  font-family:
+    'Quicksand',
+    'Source Sans Pro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 100px;
+  color: #35495e;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.links {
+  padding-top: 15px;
+}
+
+
+a {
+  color: inherit;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+.column {
+  display: flex;
+}
+.center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.cursol {
+  cursor: pointer;
+}
+input.valid-error {
+  background-color: indianred;
+}
+textarea.valid-error {
+  background-color: indianred;
+}
